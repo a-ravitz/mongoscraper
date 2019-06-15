@@ -1,0 +1,75 @@
+html,body {
+    height:100%;
+}
+
+.first {
+height:400px;
+min-height:400px;
+background-size: cover;
+background-image:url('../images/background.jpg');
+}
+
+.affix {
+background-color: #eee;
+-webkit-transition:padding 0.2s ease-out;
+-moz-transition:padding 0.2s ease-out;  
+-o-transition:padding 0.2s ease-out;         
+transition:padding 0.2s ease-out;
+}
+
+@media (min-width:768px) {
+    .affix-top {
+        /* navbar style at top */
+        background-color:transparent;
+        border-color:transparent;
+        padding: 15px;
+        -webkit-transition:all 0.5s ease;
+        -moz-transition:all 0.5s ease; 
+        -o-transition:all 0.5s ease;         
+        transition:all 0.5s ease;  
+    }
+}
+  
+nav .navbar-nav .nav-link,
+nav .navbar-brand {
+    color: #000;
+}
+
+.size {
+    height: 100px;
+    width: 150px;
+    margin-left: 20px;
+
+}
+.title {
+    width: 500px;
+    margin-right: 50px;
+}
+
+#notes {
+    float: right;
+    width: 30%;
+}
+textarea, input {
+    display: block;
+    width: 100%;
+    background-color: #FCF5C7;
+}
+input {
+    height: 36px;
+    font-size: 24px;
+}
+textarea {
+    height: 200px;
+    font-size: 18px;
+}
+#wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+}
+
+#notes {
+    margin-right: 20px;
+}
