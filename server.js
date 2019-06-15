@@ -5,8 +5,6 @@ var cookieParser = require('cookie-parser');
 var flash = require('connect-flash');
 var PORT = process.env.PORT || 3000;
 
-
-
 // Initialize Express
 
 var app = express();
@@ -30,7 +28,7 @@ app.use(session({
 app.use(flash());
 
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoScraperHomework";
-// ('useNewUrlParser', true ), mongoose.set('useFindAndModify', false), mongoose.set('useCreateIndex', true)
+
 mongoose.connect(MONGODB_URI, mongoose.set)
 // Routes
 require("./routes/routes")(app);

@@ -46,7 +46,7 @@ module.exports = function(app) {
       });
   });
   
-  // Route for saving/updating an Article's associated Note
+// Route for saving/updating an Article's associated Note
   app.post("/saved/:id", function(req, res) {
     console.log("-----note has been saved-----")
     // Create a new note and pass the req.body to the entry
@@ -66,8 +66,6 @@ module.exports = function(app) {
         res.json(err);
       });
   });
-  
-
 
 //saving a note into a seperate database
   app.get("/saved/:id", function(req, res) {
